@@ -62,9 +62,9 @@ export function Footer() {
         <div><Link to="/" className="brand footer-brand"><span className="brand-mark">A</span><span className="brand-word">AUTOVÉRSE<small>THE ART OF AUTOMOTIVE EXCELLENCE</small></span></Link><p>A considered collection, for those<br />who appreciate distinction.</p></div>
         <div className="footer-column"><span className="eyebrow">DISCOVER</span><a href="/#collection">Our collection</a><a href="/#about">Our story</a><a href="/#services">Private services</a><Link to="/compare">Compare vehicles</Link></div>
         <div className="footer-column"><span className="eyebrow">VISIT US</span><span>Central Business District</span><span>Abuja, FCT, Nigeria</span><a href="tel:+2348000002026">+234 800 000 2026</a><a href="mailto:concierge@autoverse.example">concierge@autoverse.example</a></div>
-        <div className="footer-column"><span className="eyebrow">FOLLOW ALONG</span><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://wa.me/2348000002026" target="_blank" rel="noreferrer">WhatsApp ↗</a><Link to="/admin">Team portal</Link></div>
+        <div className="footer-column"><span className="eyebrow">FOLLOW ALONG</span><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://wa.me/2348103312462" target="_blank" rel="noreferrer">WhatsApp ↗</a><Link to="/admin">Team portal</Link></div>
       </div>
-      <div className="footer-bottom"><span>© {new Date().getFullYear()} AUTOVÉRSE. All rights reserved.</span><span>Demonstration experience · Vehicles, prices and contact details are illustrative.</span><a href="#top">Back to top ↑</a></div>
+      <div className="footer-bottom"><span>© {new Date().getFullYear()} AUTOVÉRSE. All rights reserved.</span><span>Demonstration experience · Vehicles, prices and contact details are illustrative. Designed by Abdulhaqq</span><a href="#top">Back to top ↑</a></div>
     </footer>
   )
 }
@@ -101,7 +101,7 @@ export function VehicleCard({ vehicle, index = 0 }: { vehicle: Vehicle; index?: 
 
 export function WhatsAppButton({ vehicle }: { vehicle?: Vehicle }) {
   const text = encodeURIComponent(`Hello AUTOVÉRSE, I would like to enquire${vehicle ? ` about the ${vehicle.year} ${vehicle.make} ${vehicle.model}` : ' about your collection'}.`)
-  return <a className="button button-whatsapp" href={`https://wa.me/2348000002026?text=${text}`} target="_blank" rel="noreferrer">Enquire on WhatsApp <ArrowUpRight size={15} /></a>
+  return <a className="button button-whatsapp" href={`https://wa.me/2348103312462?text=${text}`} target="_blank" rel="noreferrer">Enquire on WhatsApp <ArrowUpRight size={15} /></a>
 }
 
 export function ContactForm({ vehicle }: { vehicle?: Vehicle }) {
